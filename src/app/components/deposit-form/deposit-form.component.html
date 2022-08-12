@@ -1,0 +1,56 @@
+<div class="all" style="width: 100%;">
+
+
+    <body style="width: 100%;">
+
+
+        <div class="container">
+
+            <form #depositForm="ngForm" (ngSubmit)="onSubmit(depositForm)">
+                <h1>New Deposit</h1>
+                <div class="form-inner">
+                    <article>
+                        <label for="depositAmount">Deposit Amount</label>
+                        <input type="text" name="depositAmount" id="depositAmount"
+                            pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency"
+                            placeholder="$1,000,000.00" required />
+                    </article>
+                    <article >
+                        <label for="goals">Select Goal</label>
+                        <div class="btn-group">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Goals
+                            </button>
+                            <!-- <ul class="dropdown-menu">
+                                <li ><a class="dropdown-item" *ngFor="let goal of goals">{{goal.title}}</a></li>
+
+                            </ul> -->
+                        </div>
+                    </article>
+                </div>
+
+                <div class="form-inner">
+
+                </div>
+
+                <div class="form-inner">
+
+                </div>
+
+                <div class="checkboxes">
+                    <article>
+                        <input type="checkbox" name="checkbox-one" id="checkbox-one" class="checkbox" required />
+                        <label for="checkbox-one" class="label">
+                            <div class="ball"></div>
+                        </label>
+                    </article>
+                    <small>I give permission for VANGOALD to withdrawl from the payment method on file.</small>
+                </div>
+                <button class="btn" [routerLink]="['/dashboard']" type="submit">Submit Deposit</button>
+
+                <small>Current Funds {{totalFunds}}</small>
+            </form>
+        </div>
+    </body>
+</div>

@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle&family=Roboto:wght@400;700&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+.card {
+  width: 200px;
+  height: 400px;
+  margin: 10px;
+  display: flex;
+
+  .circle {
+    display: flex;
+    justify-content: center;
+  }
+
+  .info {
+    height: 150px;
+  }
+  .more {
+    align-self: flex-end;
+  }
+}
+
+h5 {
+  font-size: 16pt;
+  font-weight: bold;
+}

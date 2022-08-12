@@ -1,0 +1,12 @@
+-get rid of dashboard button on navbar once all signin procedures function...
+    -login button if authenticated should have to dashboard button appear
+
+Need to do:
+-hook up funds
+-new crud operations
+-circle progress
+-details - progress bar
+-details countdown
+-get deposit bucket working
+-dropdown on deposit list
+

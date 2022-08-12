@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle&family=Roboto:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+.all {
+  display: flex;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.inspire {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.cardList {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+
+  flex-wrap: wrap;
+}
+.card {
+  margin: 15px;
+  padding: 15px;
+  // box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+}
+span {
+  display: flex;
+  flex-direction: row;
+  app-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

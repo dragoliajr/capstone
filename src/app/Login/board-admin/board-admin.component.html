@@ -1,0 +1,34 @@
+<div class="conatiner">
+  <div >
+    <header >
+      <p>Admin Board</p>
+      <table class = "table table-dark table-bordered data-table table-striped">
+        <thead >
+  
+          <tr >
+            <th scope="col"> User Name </th>
+            <!-- <th> Role </th> -->
+            <th scope="col"> First Name </th>
+            <th scope="col"> Last Name </th>
+            <th scope="col"> Monthly Income </th>
+            <th scope="col"> Expenses </th>
+          </tr>
+  
+        </thead>
+        <tbody >
+          <tr *ngFor = "let user of users">
+            <td> {{ user.username }} </td>
+            <!-- <td *ngFor="let role of currentUser.roles" > {{ role }}</td> -->
+            <td> {{ user.firstName }} </td>
+            <td> {{ user.lastName }} </td>
+            <td> {{ user.monlthyIncome }} </td>
+            <td> {{ user.expenses }} </td>
+          </tr>
+        </tbody>
+      </table>
+    </header>
+
+
+  </div>
+  
+</div>

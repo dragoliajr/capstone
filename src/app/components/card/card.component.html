@@ -1,0 +1,18 @@
+<div class="card shadow-lg p-3 mb-5 bg-white rounded" *ngFor="let goal of goals">
+    <div class="circle">
+        <app-progress-circle></app-progress-circle>
+    </div>
+    <div class="info card-body">
+        <h5 class="card-title">{{ goal.title }}</h5>
+        <p class="card-text">{{ goal.description }}</p>
+        <p class="card-text">Total: {{goal.amount}}</p>
+        <p class="card-text">Funds: {{goal.fund}}</p>
+        <p class="card-text">Total left: : {{goal.amount-goal.fund}}</p>
+        
+    </div>
+    <div class="more">
+        <a (click)="goalDetails(goal.id)" class="btn btn-primary">More</a>
+    </div>
+</div>
+
+<!-- note need to test goal of goals info to see if it has a fixed size -->
